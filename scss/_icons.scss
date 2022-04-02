@@ -1,0 +1,16 @@
+.icon {
+  width: 40px;
+  height: 40px;
+  &-container {
+    background: #f3f9f8;
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &--primary {
+    fill: $color-primary;
+  }
+}
