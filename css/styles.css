@@ -230,4 +230,55 @@ a {
     font-size: 1.5rem;
   }
 }
+
+.input {
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  color: #1b0760;
+  font-size: 2rem;
+  outline: none;
+  padding: 1.5rem 2.5rem;
+}
+
+.input-group {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.input-group .input {
+  border: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 1.5rem 1rem;
+}
+
+.input-group .btn {
+  margin: 4px;
+}
+
+::-webkit-input-placeholder {
+  color: #cdcbd7;
+}
+
+:-ms-input-placeholder {
+  color: #cdcbd7;
+}
+
+::-ms-input-placeholder {
+  color: #cdcbd7;
+}
+
+::placeholder {
+  color: #cdcbd7;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
