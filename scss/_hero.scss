@@ -1,0 +1,21 @@
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+  &__tagline {
+    font-size: 2rem;
+    color: #b9c3cf;
+    letter-spacing: 1px;
+    margin-top: 2rem 0 5rem;
+  }
+  &__image {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 0;
+    &__content {
+      text-align: left;
+      align-self: center;
+    }
+  }
+}
