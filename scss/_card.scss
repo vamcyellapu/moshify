@@ -17,4 +17,7 @@
   &--secondary .badge--secondary {
     background: darken($color-secondary, 3);
   }
+  &--primary .badge--primary {
+    background: darken($color-primary, 3);
+  }
 }

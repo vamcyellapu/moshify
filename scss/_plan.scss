@@ -1,4 +1,8 @@
 .plan {
+  transition: transform 0.2s ease-out;
+  &:hover {
+    transform: scale(1.05);
+  }
   &__name {
     color: $color-white;
     margin: 0;
@@ -19,6 +23,12 @@
     font-weight: 300;
     letter-spacing: 1px;
     display: block;
+  }
+  &--popular {
+    transform: scale(1.1);
+    &:hover {
+      transform: scale(1.15);
+    }
   }
   &--popular .card__header {
     position: relative;
