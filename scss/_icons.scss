@@ -9,8 +9,18 @@
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    &--accent {
+      background: $color-accent;
+    }
   }
   &--primary {
     fill: $color-primary;
+  }
+  &--white {
+    fill: $color-white;
+  }
+  &--small {
+    width: 30px;
+    height: 30px;
   }
 }
