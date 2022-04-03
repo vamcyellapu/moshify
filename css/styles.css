@@ -195,6 +195,7 @@ a {
   margin: 1rem 0;
   -webkit-transition: all 0.15s;
   transition: all 0.15s;
+  outline: none;
 }
 
 .btn--primary {
@@ -245,6 +246,13 @@ a {
   padding-right: 6rem;
 }
 
+.btn .icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  vertical-align: middle;
+}
+
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.5rem;
@@ -273,7 +281,7 @@ a {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
 }
 
 .input-group .btn {
@@ -718,6 +726,35 @@ a {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+}
+
+.block-domain .input-group {
+  -webkit-box-shadow: 0 0 30px 20px #e6ebee;
+          box-shadow: 0 0 30px 20px #e6ebee;
+  border: 0;
+  margin: 4rem auto;
+  max-width: 680px;
+}
+
+.block-domain__prices {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (6rem)[2];
+      grid-template-rows: repeat(2, 6rem);
+  font-size: 2rem;
+  font-weight: 600;
+  justify-items: center;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .block-domain__prices {
+    -ms-grid-columns: (minmax(10rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   }
 }
 /*# sourceMappingURL=styles.css.map */
