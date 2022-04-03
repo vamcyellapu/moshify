@@ -198,7 +198,7 @@ a {
   cursor: pointer;
   font-size: 1.8rem;
   font-weight: 600;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-transform: uppercase;
   white-space: nowrap;
   text-align: center;
@@ -292,6 +292,7 @@ a {
       -ms-flex-positive: 1;
           flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -544,6 +545,10 @@ a {
 .callout {
   padding: 4rem;
   border-radius: 5px;
+  max-width: 980px;
+  margin: 0 auto;
+  -webkit-transform: translateY(75%);
+          transform: translateY(75%);
 }
 
 .callout .btn {
@@ -773,17 +778,18 @@ a {
 }
 
 .block-domain__prices {
+  color: #1b0760;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: (6rem)[2];
-      grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (6rem)[2];
+      grid-template-rows: repeat(2, 6rem);
   justify-items: center;
-  max-width: 700px;
   margin: 0 auto;
+  max-width: 700px;
 }
 
 @media screen and (min-width: 768px) {

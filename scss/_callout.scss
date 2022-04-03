@@ -1,6 +1,11 @@
 .callout {
   padding: 4rem;
   border-radius: 5px;
+  max-width: 980px;
+  margin: 0 auto;
+
+  transform: translateY(75%);
+
   .btn {
     justify-self: center;
     align-self: center;
