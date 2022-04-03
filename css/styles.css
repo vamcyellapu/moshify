@@ -239,6 +239,11 @@ a {
   color: #fff;
 }
 
+.btn--outline--stretched {
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.5rem;
@@ -487,6 +492,49 @@ a {
   }
   .testimonial .quote {
     margin-left: 6rem;
+  }
+}
+
+.callout {
+  padding: 4rem;
+  border-radius: 5px;
+}
+
+.callout .btn {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.callout__heading {
+  color: #fff;
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.callout__content {
+  text-align: center;
+}
+
+.callout--primary {
+  background: #2584ff;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .callout__content {
+    text-align: left;
+  }
+  .callout .btn {
+    -ms-grid-column-align: start;
+        justify-self: start;
+    margin: 0 2rem;
+  }
+  .callout .grid--1x2 {
+    -ms-grid-columns: 1fr auto;
+        grid-template-columns: 1fr auto;
   }
 }
 /*# sourceMappingURL=styles.css.map */

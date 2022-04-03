@@ -1,0 +1,34 @@
+.callout {
+  padding: 4rem;
+  border-radius: 5px;
+  .btn {
+    justify-self: center;
+    align-self: center;
+  }
+  &__heading {
+    color: $color-white;
+    margin-top: 0;
+    font-size: 3rem;
+  }
+  &__content {
+    text-align: center;
+  }
+  &--primary {
+    background: $color-primary;
+    color: $color-white;
+  }
+}
+@media screen and (min-width: 768px) {
+  .callout {
+    &__content {
+      text-align: left;
+    }
+    .btn {
+      justify-self: start;
+      margin: 0 2rem;
+    }
+    .grid--1x2 {
+      grid-template-columns: 1fr auto;
+    }
+  }
+}
