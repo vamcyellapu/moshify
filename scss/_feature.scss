@@ -1,0 +1,13 @@
+.feature {
+  gap: 4rem 2rem;
+  margin: 12rem 0;
+  &:first-of-type {
+    margin-top: 6rem;
+  }
+  &__heading {
+    margin: 1rem 0;
+  }
+  &__image {
+    width: 100%;
+  }
+}
