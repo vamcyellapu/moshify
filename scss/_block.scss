@@ -1,0 +1,31 @@
+.block {
+  $padding-vertical: 6rem;
+  padding: $padding-vertical 2rem;
+
+  &__header {
+    text-align: center;
+  }
+  &__heading {
+    margin-top: 0;
+  }
+  &--dark {
+    background: #000;
+    color: #7b858b;
+    .block__heading {
+      color: $color-white;
+    }
+  }
+  &--skewed-right {
+    padding-bottom: $padding-vertical + 4rem;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  }
+  &--skewed-left {
+    padding-bottom: $padding-vertical + 4rem;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  }
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
