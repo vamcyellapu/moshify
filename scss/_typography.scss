@@ -1,4 +1,8 @@
 /* Typography */
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}
 html {
   font-size: 62.5%;
 }
@@ -25,6 +29,7 @@ h2 {
 }
 h3 {
   font-size: 3rem;
+  font-weight: 500;
 }
 
 p {

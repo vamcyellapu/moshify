@@ -1,5 +1,4 @@
 .list {
-  color: $color-heading;
   list-style: none;
   padding-left: 0;
   &--inline &__item {
@@ -9,6 +8,7 @@
   &--tick {
     list-style-image: url(../images/tick.svg);
     padding-left: 3rem;
+    color: $color-heading;
     & .list__item {
       padding-left: 0.5rem;
       margin-bottom: 1rem;

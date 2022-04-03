@@ -1,0 +1,22 @@
+.block-showcase {
+  &__image {
+    & > img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .block-showcase {
+    &__image {
+      justify-self: end;
+      & > img {
+        width: auto;
+        max-width: 700px;
+      }
+    }
+    .grid {
+      grid-template-columns: 50% 50%;
+    }
+  }
+}
