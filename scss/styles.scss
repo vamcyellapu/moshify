@@ -75,3 +75,32 @@ a {
     font-size: 1.5rem;
   }
 }
+
+// Badges
+.badge {
+  border-radius: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 0.5rem 2rem;
+  white-space: nowrap;
+  &--primary {
+    background: $color-primary;
+    color: #fff;
+  }
+  &--secondary {
+    background: $color-secondary;
+    color: #fff;
+  }
+  &--small {
+    font-size: 1.6rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .badge {
+    font-size: 1.5rem;
+    &--small {
+      font-size: 1.2rem;
+    }
+  }
+}
