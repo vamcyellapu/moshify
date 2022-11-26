@@ -199,6 +199,18 @@ a {
   outline: none;
   padding: 1.5rem 3.5rem;
 }
+.input-group {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  display: flex;
+}
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+}
+.input-group .btn {
+  margin: 6px 3px;
+}
 
 ::-moz-placeholder {
   color: #cdcbd7;

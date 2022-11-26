@@ -3,6 +3,7 @@ $color-secondary: #00d9ff;
 $color-accent: #ff3400;
 $color-headings: #1b0760;
 $color-body: #918ca4;
+$color-border: #ccc;
 $color-white: #fff;
 
 *,
@@ -218,11 +219,24 @@ a {
 
 .input {
   border-radius: 30px;
-  border: 1px solid #ccc;
+  border: 1px solid $color-border;
   color: $color-headings;
   font-size: 2rem;
   outline: none;
   padding: 1.5rem 3.5rem;
+  &-group {
+    border: 1px solid $color-border;
+    border-radius: 30px;
+    display: flex;
+
+    .input {
+      border: 0;
+      flex-grow: 1;
+    }
+    .btn {
+      margin: 6px 3px;
+    }
+  }
 }
 
 ::placeholder {
