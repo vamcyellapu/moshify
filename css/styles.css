@@ -190,4 +190,30 @@ a {
   .btn {
     font-size: 1.5rem;
   }
+}
+.input {
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  color: #1b0760;
+  font-size: 2rem;
+  outline: none;
+  padding: 1.5rem 3.5rem;
+}
+
+::-moz-placeholder {
+  color: #cdcbd7;
+}
+
+:-ms-input-placeholder {
+  color: #cdcbd7;
+}
+
+::placeholder {
+  color: #cdcbd7;
+}
+
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=styles.css.map */
