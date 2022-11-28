@@ -533,3 +533,36 @@ a {
     }
   }
 }
+
+// Blocks
+
+.block {
+  $padding-verticle: 6rem;
+  padding: $padding-verticle 2rem;
+  &__header {
+    text-align: center;
+  }
+  &__heading {
+    margin-top: 0;
+  }
+  &--dark {
+    background-color: #000;
+    color: #7b858b;
+    .block__heading {
+      color: $color-white;
+    }
+  }
+  &--skewed-right {
+    padding-bottom: calc($padding-verticle + 4rem);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+  }
+  &--skewed-left {
+    padding-bottom: calc($padding-verticle + 4rem);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+  }
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
