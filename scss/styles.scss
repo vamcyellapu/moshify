@@ -13,6 +13,10 @@ $color-white: #fff;
 }
 // Typography
 
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}
 html {
   font-size: 62.5%;
 }
@@ -41,6 +45,7 @@ h2 {
 
 h3 {
   font-size: 3rem;
+  font-weight: 500;
 }
 p {
   margin-top: 0;
@@ -119,7 +124,6 @@ a {
 .list {
   list-style: none;
   padding-left: 0;
-  color: $color-headings;
   &--inline &__item {
     display: inline-block;
     margin-right: 2rem;
@@ -127,6 +131,8 @@ a {
   &--tick {
     list-style-image: url(../images/tick.svg);
     padding-left: 3rem;
+    color: $color-headings;
+
     .list__item {
       padding-left: 0.5rem;
     }
@@ -378,6 +384,7 @@ a {
 
 .media {
   display: flex;
+  margin-bottom: 4rem;
   &__title {
     margin-top: 0;
   }
@@ -569,17 +576,19 @@ a {
   &--dark {
     background-color: #000;
     color: #7b858b;
-    .block__heading {
+    h1,
+    h2,
+    h3 {
       color: $color-white;
     }
   }
   &--skewed-right {
     padding-bottom: calc($padding-verticle + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 80%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
   }
   &--skewed-left {
     padding-bottom: calc($padding-verticle + 4rem);
-    clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
   }
 }
 
@@ -648,8 +657,6 @@ a {
 
 // Hero
 .hero {
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
-
   &__tagline {
     font-size: 2rem;
     color: #b9c3cf;
@@ -732,6 +739,27 @@ a {
   .feature {
     &:nth-of-type(even) &__content {
       order: 2;
+    }
+  }
+}
+// Showcase Block
+.block-showcase__image {
+  img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .block-showcase {
+    .grid {
+      grid-template-columns: 50% 50%;
+    }
+    &__image {
+      justify-self: end;
+      img {
+        width: auto;
+        max-width: 700px;
+      }
     }
   }
 }
